@@ -28,7 +28,7 @@ class Address(msrest.serialization.Model):
     :ivar street_number: The building number on the street.
     :vartype street_number: str
     :ivar route_numbers: The codes used to unambiguously identify the street.
-    :vartype route_numbers: list[int]
+    :vartype route_numbers: list[str]
     :ivar street_name: The street name.
     :vartype street_name: str
     :ivar street_name_and_number: The street name and number.
@@ -97,7 +97,7 @@ class Address(msrest.serialization.Model):
         'street': {'key': 'street', 'type': 'str'},
         'cross_street': {'key': 'crossStreet', 'type': 'str'},
         'street_number': {'key': 'streetNumber', 'type': 'str'},
-        'route_numbers': {'key': 'routeNumbers', 'type': '[int]'},
+        'route_numbers': {'key': 'routeNumbers', 'type': '[str]'},
         'street_name': {'key': 'streetName', 'type': 'str'},
         'street_name_and_number': {'key': 'streetNameAndNumber', 'type': 'str'},
         'municipality': {'key': 'municipality', 'type': 'str'},
